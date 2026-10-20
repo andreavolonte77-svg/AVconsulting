@@ -416,8 +416,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
   transition: background 0.2s;
 }
 .about__pillar:hover { background: var(--paper); }
-.about__pillar-num,
-.service-item__num {
+.about__pillar-num {
   font-family: var(--font-display);
   font-size: 12px;
   font-weight: 700;
@@ -460,54 +459,83 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
   line-height: 1.7;
 }
 
-.services__list {
+/* Tre aree: Growth · Strategy · Execution */
+.service-areas {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  border-top: 1px solid var(--warm-white);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--warm-white);
+  border: 1px solid var(--warm-white);
 }
-.service-item {
-  padding: 36px 0;
-  border-bottom: 1px solid var(--warm-white);
-  display: grid;
-  grid-template-columns: 52px 1fr;
-  gap: 20px;
-  transition: background 0.15s;
+.service-area {
+  background: var(--white);
+  padding: clamp(28px, 3vw, 40px);
+  display: flex;
+  flex-direction: column;
+  box-shadow: inset 0 2px 0 var(--sand-gold);
 }
-.service-item:nth-child(odd) { padding-right: 48px; }
-.service-item:nth-child(even) {
-  padding-left: 48px;
-  border-left: 1px solid var(--warm-white);
-}
-.service-item:hover { background: var(--white); }
-.service-item__num { padding-top: 4px; }
-.service-item__title {
+.service-area__tag {
   font-family: var(--font-display);
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--graphite);
-  margin-bottom: 8px;
-  line-height: 1.25;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--bordeaux);
+  margin-bottom: 14px;
 }
-.service-item__desc {
+.service-area__tag span {
+  color: var(--warm-gray);
+  margin-right: 8px;
+}
+.service-area__title {
+  font-family: var(--font-display);
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--graphite);
+  margin-bottom: 12px;
+}
+.service-area__desc {
   font-size: 15px;
   color: var(--warm-gray);
   line-height: 1.65;
-  margin-bottom: 12px;
 }
-.service-item__benefit {
+.service-area__list {
+  margin: 28px 0;
+  border-top: 1px solid var(--warm-white);
+  flex: 1;
+}
+.service-area__list li {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--warm-white);
+}
+.service-area__list h4 {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--graphite);
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+.service-area__list p {
+  font-size: 14px;
+  color: var(--warm-gray);
+  line-height: 1.55;
+}
+.service-area__benefit {
   font-size: 14px;
   font-family: var(--font-display);
   font-weight: 600;
   color: var(--bordeaux);
-  letter-spacing: 0.01em;
+  line-height: 1.5;
 }
 
+@media (max-width: 1000px) {
+  .service-areas { grid-template-columns: 1fr; }
+}
 @media (max-width: 860px) {
   .services__header { grid-template-columns: 1fr; }
-  .services__list { grid-template-columns: 1fr; }
-  .service-item { grid-template-columns: 36px 1fr; gap: 12px; }
-  .service-item:nth-child(even) { padding-left: 0; border-left: none; }
-  .service-item:nth-child(odd) { padding-right: 0; }
 }
 
 /* ─── Sectors (unico blocco scuro) ──────────── */

@@ -3,9 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AV Consulting — Growth. Strategy. Execution.</title>
-  <meta name="description" content="Andrea Verderio — Consulente senior in Sales, Marketing e Growth. Oltre 20 anni di esperienza in automotive, marketplace digitali, CRM e strategia commerciale B2B e B2C.">
+  <title>Consulente Sales e Marketing a Milano | AV Consulting</title>
+  <meta name="description" content="Consulenza senior in sales, marketing e growth per aziende B2B e B2C: go-to-market, lead generation, CRM e sales transformation. Oltre 20 anni di esperienza, focus automotive e marketplace. Milano e da remoto.">
   <meta name="theme-color" content="#F2F1EF">
+  <meta name="robots" content="index, follow">
+  <!-- SEO: aggiornare il dominio se diverso da avconsulting.it -->
+  <link rel="canonical" href="https://avconsulting.it/">
+
+  <!-- Anteprima per LinkedIn, WhatsApp e social -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="AV Consulting">
+  <meta property="og:url" content="https://avconsulting.it/">
+  <meta property="og:title" content="AV Consulting — Growth. Strategy. Execution.">
+  <meta property="og:description" content="Consulenza senior in sales, marketing e growth: strategia commerciale, acquisizione clienti ed execution, con focus automotive e marketplace.">
+  <meta property="og:image" content="https://avconsulting.it/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo AV Consulting — Growth, Strategy, Execution">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Dati strutturati per Google (schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "AV Consulting",
+    "slogan": "Growth. Strategy. Execution.",
+    "description": "Consulenza senior in sales, marketing e growth per aziende B2B e B2C, con focus su automotive e marketplace digitali.",
+    "url": "https://avconsulting.it/",
+    "logo": "https://avconsulting.it/assets/img/logo-av-consulting.png",
+    "image": "https://avconsulting.it/assets/img/og-image.jpg",
+    "email": "andrea@avconsulting.it",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Milano",
+      "addressCountry": "IT"
+    },
+    "areaServed": { "@type": "Country", "name": "Italia" },
+    "availableLanguage": "it",
+    "knowsAbout": ["Strategia commerciale", "Go-to-market", "Sales transformation", "Performance marketing", "Lead generation B2B", "CRM", "Pricing", "Marketplace", "Automotive"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Aree di intervento",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Growth — Marketing e acquisizione clienti", "description": "Performance marketing, lead generation, marketing B2B e B2C, crescita e monetizzazione dei marketplace." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Strategy — Strategia commerciale e go-to-market", "description": "Go-to-market, pricing e revenue optimization, lancio prodotti, advisory per l'ecosistema automotive." } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Execution — Vendite, CRM e organizzazione commerciale", "description": "Sales transformation, digital sales enablement, CRM e customer lifecycle, interim leadership." } }
+      ]
+    }
+  }
+  </script>
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
@@ -98,8 +146,8 @@
               <p class="hero__stat-label">crescita ricavi guidata<br> in contesti marketplace</p>
             </div>
             <div>
-              <div class="hero__stat-num">12</div>
-              <p class="hero__stat-label">aree di competenza<br> tra strategia ed execution</p>
+              <div class="hero__stat-num">+40<span>%</span></div>
+              <p class="hero__stat-label">lead qualificati<br> in campagne di demand generation</p>
             </div>
           </div>
         </div>
@@ -215,122 +263,91 @@
         <div>
           <p class="label">Servizi</p>
           <h2 class="section-heading services__heading reveal" id="servicesHeading">
-            Cosa posso fare<br>per la tua azienda
+            Tre aree di intervento,<br>un unico obiettivo: crescere.
           </h2>
         </div>
         <p class="services__intro reveal reveal-delay-1">
           Intervento su misura, con un obiettivo definito e una roadmap di execution.
-          Ogni servizio è progettato per produrre un impatto misurabile sul tuo business.
+          Ogni area si attiva da sola o insieme alle altre, come progetto, advisory continuativa
+          o ruolo di fractional director.
         </p>
       </div>
-      <div class="services__list" role="list">
 
-        <article class="service-item reveal" role="listitem">
-          <span class="service-item__num" aria-hidden="true">01</span>
-          <div>
-            <h3 class="service-item__title">Commercial Strategy &amp; Go-to-Market</h3>
-            <p class="service-item__desc">Segmentazione del mercato, value proposition, modello d'offerta, pricing e piano commerciale operativo. Dal posizionamento alla prima trattativa.</p>
-            <p class="service-item__benefit">→ Modello di crescita strutturato e immediatamente eseguibile</p>
-          </div>
+      <div class="service-areas">
+
+        <article class="service-area reveal" id="growth" aria-labelledby="areaGrowth">
+          <p class="service-area__tag"><span aria-hidden="true">01</span> Growth</p>
+          <h3 class="service-area__title" id="areaGrowth">Marketing e acquisizione clienti</h3>
+          <p class="service-area__desc">Marketing che genera pipeline e ricavi, non solo visibilità: dalla lead generation alla monetizzazione della base clienti.</p>
+          <ul class="service-area__list">
+            <li>
+              <h4>Performance marketing &amp; lead generation</h4>
+              <p>Campagne digitali, social advertising, conversion optimization e lead nurturing.</p>
+            </li>
+            <li>
+              <h4>Marketing B2B</h4>
+              <p>Demand generation, account-based marketing, partner e channel marketing.</p>
+            </li>
+            <li>
+              <h4>Marketing B2C</h4>
+              <p>Customer journey dall'awareness alla retention, per massimizzare il valore nel tempo.</p>
+            </li>
+            <li>
+              <h4>Marketplace growth &amp; monetization</h4>
+              <p>ARPU, pricing a pacchetti, retention e crescita per categoria.</p>
+            </li>
+          </ul>
+          <p class="service-area__benefit">→ Lead qualificati, costo di acquisizione sotto controllo, ricavi per cliente in crescita</p>
         </article>
 
-        <article class="service-item reveal reveal-delay-1" role="listitem">
-          <span class="service-item__num" aria-hidden="true">02</span>
-          <div>
-            <h3 class="service-item__title">Sales Transformation</h3>
-            <p class="service-item__desc">Revisione del funnel, dei processi, dell'organizzazione commerciale e del sistema di incentivi. Costruzione di un reparto vendite ad alta performance.</p>
-            <p class="service-item__benefit">→ Cicli di vendita più brevi, pipeline più prevedibile</p>
-          </div>
+        <article class="service-area reveal reveal-delay-1" id="strategy" aria-labelledby="areaStrategy">
+          <p class="service-area__tag"><span aria-hidden="true">02</span> Strategy</p>
+          <h3 class="service-area__title" id="areaStrategy">Strategia commerciale e go-to-market</h3>
+          <p class="service-area__desc">Dove competere, con quale offerta e a che prezzo. Un modello di crescita strutturato e immediatamente eseguibile.</p>
+          <ul class="service-area__list">
+            <li>
+              <h4>Commercial strategy &amp; go-to-market</h4>
+              <p>Segmentazione, value proposition, modello d'offerta e piano commerciale operativo.</p>
+            </li>
+            <li>
+              <h4>Pricing &amp; revenue optimization</h4>
+              <p>Prezzi, margini e pacchetti come leva di posizionamento e profittabilità.</p>
+            </li>
+            <li>
+              <h4>Product launch &amp; campaign strategy</h4>
+              <p>Lanci integrati sales, marketing e comunicazione con traguardi di revenue chiari.</p>
+            </li>
+            <li>
+              <h4>Automotive ecosystem advisory</h4>
+              <p>Consulenza per OEM, dealer network, marketplace, mobility, finance e insurance.</p>
+            </li>
+          </ul>
+          <p class="service-area__benefit">→ Decisioni strategiche chiare, margini migliorati senza perdere competitività</p>
         </article>
 
-        <article class="service-item reveal reveal-delay-1" role="listitem">
-          <span class="service-item__num" aria-hidden="true">03</span>
-          <div>
-            <h3 class="service-item__title">Digital Sales Enablement</h3>
-            <p class="service-item__desc">CRM, dashboard, automazione e strumenti di pipeline management. Tecnologia al servizio delle vendite, non viceversa.</p>
-            <p class="service-item__benefit">→ Visibilità totale sulla pipeline, decisioni più veloci</p>
-          </div>
-        </article>
-
-        <article class="service-item reveal reveal-delay-2" role="listitem">
-          <span class="service-item__num" aria-hidden="true">04</span>
-          <div>
-            <h3 class="service-item__title">Performance Marketing &amp; Lead Generation</h3>
-            <p class="service-item__desc">Campagne digitali, social advertising, conversion optimization e lead nurturing. Acquisizione misurabile, non solo visibilità.</p>
-            <p class="service-item__benefit">→ Lead qualificati con costo di acquisizione ottimizzato</p>
-          </div>
-        </article>
-
-        <article class="service-item reveal reveal-delay-2" role="listitem">
-          <span class="service-item__num" aria-hidden="true">05</span>
-          <div>
-            <h3 class="service-item__title">B2B Marketing Strategy</h3>
-            <p class="service-item__desc">Marketing a supporto diretto della vendita: demand generation, account-based marketing, partner e channel marketing.</p>
-            <p class="service-item__benefit">→ Marketing che genera pipeline, non solo brand awareness</p>
-          </div>
-        </article>
-
-        <article class="service-item reveal reveal-delay-3" role="listitem">
-          <span class="service-item__num" aria-hidden="true">06</span>
-          <div>
-            <h3 class="service-item__title">B2C Consumer Marketing Strategy</h3>
-            <p class="service-item__desc">Awareness, consideration, conversion, retention. Customer journey progettato per massimizzare il valore nel tempo.</p>
-            <p class="service-item__benefit">→ Tasso di conversione più alto, retention migliorata</p>
-          </div>
-        </article>
-
-        <article class="service-item reveal reveal-delay-3" role="listitem">
-          <span class="service-item__num" aria-hidden="true">07</span>
-          <div>
-            <h3 class="service-item__title">Marketplace Growth &amp; Monetization</h3>
-            <p class="service-item__desc">ARPU, pricing a pacchetti, retention, sviluppo della base clienti e crescita per category. Modelli di monetizzazione scalabili.</p>
-            <p class="service-item__benefit">→ Ricavi per cliente in crescita, churn sotto controllo</p>
-          </div>
-        </article>
-
-        <article class="service-item reveal reveal-delay-4" role="listitem">
-          <span class="service-item__num" aria-hidden="true">08</span>
-          <div>
-            <h3 class="service-item__title">Automotive Ecosystem Advisory</h3>
-            <p class="service-item__desc">Consulenza specializzata per OEM, dealer network, marketplace automotive, mobility operator, finance e insurance partner.</p>
-            <p class="service-item__benefit">→ Decisioni strategiche con una lettura esperta del mercato</p>
-          </div>
-        </article>
-
-        <article class="service-item reveal reveal-delay-4" role="listitem">
-          <span class="service-item__num" aria-hidden="true">09</span>
-          <div>
-            <h3 class="service-item__title">CRM &amp; Customer Lifecycle</h3>
-            <p class="service-item__desc">Lead management, nurturing, retention, loyalty e cross-sell. Il CRM come motore di crescita, non come archivio contatti.</p>
-            <p class="service-item__benefit">→ Customer lifetime value in crescita, processi automatizzati</p>
-          </div>
-        </article>
-
-        <article class="service-item reveal" role="listitem">
-          <span class="service-item__num" aria-hidden="true">10</span>
-          <div>
-            <h3 class="service-item__title">Pricing &amp; Revenue Optimization</h3>
-            <p class="service-item__desc">Ottimizzazione dei prezzi, dei margini e dei pacchetti commerciali. Pricing come leva strategica di posizionamento e profittabilità.</p>
-            <p class="service-item__benefit">→ Margini migliorati senza perdere competitività</p>
-          </div>
-        </article>
-
-        <article class="service-item reveal reveal-delay-1" role="listitem">
-          <span class="service-item__num" aria-hidden="true">11</span>
-          <div>
-            <h3 class="service-item__title">Product Launch &amp; Campaign Strategy</h3>
-            <p class="service-item__desc">Piani integrati di lancio prodotti e servizi: coordinamento sales, marketing e comunicazione verso un obiettivo di revenue definito.</p>
-            <p class="service-item__benefit">→ Lanci coerenti, con traguardi commerciali chiari</p>
-          </div>
-        </article>
-
-        <article class="service-item reveal reveal-delay-2" role="listitem">
-          <span class="service-item__num" aria-hidden="true">12</span>
-          <div>
-            <h3 class="service-item__title">Interim Leadership &amp; Advisory</h3>
-            <p class="service-item__desc">Fractional Sales o Marketing Director, supporto continuativo a CEO e board, advisory strategica su operazioni e trasformazione.</p>
-            <p class="service-item__benefit">→ Competenza senior disponibile immediatamente, senza ricerca</p>
-          </div>
+        <article class="service-area reveal reveal-delay-2" id="execution" aria-labelledby="areaExecution">
+          <p class="service-area__tag"><span aria-hidden="true">03</span> Execution</p>
+          <h3 class="service-area__title" id="areaExecution">Vendite, CRM e organizzazione commerciale</h3>
+          <p class="service-area__desc">Processi, strumenti e persone che trasformano il piano in risultati, con un affiancamento operativo al team.</p>
+          <ul class="service-area__list">
+            <li>
+              <h4>Sales transformation</h4>
+              <p>Funnel, processi, organizzazione commerciale e sistema di incentivi.</p>
+            </li>
+            <li>
+              <h4>Digital sales enablement</h4>
+              <p>CRM, dashboard, automazione e strumenti di pipeline management.</p>
+            </li>
+            <li>
+              <h4>CRM &amp; customer lifecycle</h4>
+              <p>Lead management, retention, loyalty e cross-sell: il CRM come motore di crescita.</p>
+            </li>
+            <li>
+              <h4>Interim leadership &amp; advisory</h4>
+              <p>Fractional sales o marketing director e supporto continuativo a CEO e board.</p>
+            </li>
+          </ul>
+          <p class="service-area__benefit">→ Cicli di vendita più brevi, pipeline prevedibile, competenza senior subito disponibile</p>
         </article>
 
       </div>
@@ -425,8 +442,8 @@
             <p class="metric__label">Anni di esperienza in ruoli di leadership su sales &amp; marketing</p>
           </div>
           <div class="metric">
-            <div class="metric__num">12</div>
-            <p class="metric__label">Aree di competenza coperte tra strategia, marketing e sales</p>
+            <div class="metric__num">6</div>
+            <p class="metric__label">Settori di specializzazione, con un verticale principale nell'automotive</p>
           </div>
         </div>
       </div>
@@ -595,13 +612,11 @@
             <label for="topic">Area di interesse</label>
             <select id="topic" name="area">
               <option value="" selected>Seleziona un'area</option>
-              <option>Strategia commerciale &amp; go-to-market</option>
-              <option>Sales transformation</option>
-              <option>Marketing &amp; lead generation</option>
-              <option>Marketplace &amp; monetizzazione</option>
-              <option>CRM &amp; customer lifecycle</option>
+              <option>Growth · marketing e acquisizione clienti</option>
+              <option>Strategy · strategia commerciale e go-to-market</option>
+              <option>Execution · vendite, CRM e organizzazione</option>
+              <option>Interim / fractional director</option>
               <option>Automotive advisory</option>
-              <option>Interim leadership</option>
               <option>Altro</option>
             </select>
           </div>
