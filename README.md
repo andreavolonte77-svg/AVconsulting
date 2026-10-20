@@ -16,15 +16,14 @@ assets/img/           Logo, favicon, icona iOS, immagine social (og-image.jpg)
 robots.txt, sitemap.xml  File per i motori di ricerca
 ```
 
-## Attivare il modulo contatti (Formspree)
+## Modulo contatti (Formspree)
 
-1. Crea un account gratuito su https://formspree.io e un nuovo modulo
-   con destinazione `andrea@avconsulting.it`.
-2. Copia il codice del modulo (es. `xabcdefg` da `https://formspree.io/f/xabcdefg`).
-3. In `index.html` sostituisci `IL_TUO_ID` nell'attributo `action` del form.
+Il form invia a `https://formspree.io/f/mdearajn`. I messaggi arrivano
+all'email impostata nel modulo su formspree.io, dove si gestiscono anche
+destinatari, filtro spam e storico degli invii.
 
-Finché il codice non è inserito, il modulo non finge l'invio: mostra un
-messaggio con l'indirizzo email da usare in alternativa.
+Per cambiare modulo basta sostituire il codice nell'attributo `action`
+del form in `index.html`.
 
 ## Da completare prima della pubblicazione
 
