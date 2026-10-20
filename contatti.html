@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti | AV Consulting</title>
+  <meta name="description" content="Scrivi ad AV Consulting per un primo confronto senza impegno. Milano e da remoto.">
+  <meta name="theme-color" content="#F2F1EF">
+  <link rel="canonical" href="https://avconsulting.it/contatti.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="AV Consulting">
+  <meta property="og:url" content="https://avconsulting.it/contatti.html">
+  <meta property="og:title" content="Contatti | AV Consulting">
+  <meta property="og:description" content="Scrivi ad AV Consulting per un primo confronto senza impegno. Milano e da remoto.">
+  <meta property="og:image" content="https://avconsulting.it/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo AV Consulting — Growth, Strategy, Execution">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Vai al contenuto</a>
+
+  <header class="nav" id="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" aria-label="AV Consulting — Home">
+          <img src="assets/img/logo-av-consulting.png" alt="AV Consulting" class="nav__logo" width="566" height="120">
+        </a>
+        <nav aria-label="Navigazione principale">
+          <ul class="nav__links">
+            <li><a href="chi-sono.html">Chi sono</a></li>
+            <li><a href="approccio.html">Approccio</a></li>
+            <li><a href="servizi.html">Servizi</a></li>
+            <li><a href="settori.html">Settori</a></li>
+            <li><a href="risultati.html">Risultati</a></li>
+            <li><a href="metodo.html">Metodo</a></li>
+            <li><a href="a-chi-mi-rivolgo.html">A chi mi rivolgo</a></li>
+          </ul>
+        </nav>
+        <a href="contatti.html" class="nav__cta desktop" aria-current="page">Contatti</a>
+        <button class="nav__burger" id="burgerBtn" aria-label="Apri menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="nav__mobile" id="mobileMenu" aria-label="Menu mobile">
+      <a href="chi-sono.html">Chi sono</a>
+      <a href="approccio.html">Approccio</a>
+      <a href="servizi.html">Servizi</a>
+      <a href="settori.html">Settori</a>
+      <a href="risultati.html">Risultati</a>
+      <a href="metodo.html">Metodo</a>
+      <a href="a-chi-mi-rivolgo.html">A chi mi rivolgo</a>
+      <a href="contatti.html" aria-current="page">Contatti</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+  <section class="page-first contact section-pad" id="contact" aria-labelledby="contactHeading">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Percorso">
+        <a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Contatti</span>
+      </nav>
+      <div class="contact__inner">
+        <div class="contact__left">
+          <div class="contact__eyebrow">
+            <p class="label">Contatti</p>
+          </div>
+          <h1 class="section-heading contact__heading reveal" id="contactHeading">
+            Iniziamo<br>con una conversazione.
+          </h1>
+          <p class="contact__body reveal reveal-delay-1">
+            Se stai affrontando una sfida commerciale, una fase di trasformazione o
+            hai bisogno di una prospettiva esterna qualificata — scrivi. La prima
+            conversazione è sempre senza impegno.
+          </p>
+          <dl class="contact__details reveal reveal-delay-2">
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:andrea@avconsulting.it">andrea@avconsulting.it</a></dd>
+            </div>
+            <div>
+              <dt>Dove</dt>
+              <dd>Milano, Italia · disponibile anche da remoto</dd>
+            </div>
+          </dl>
+        </div>
+        <!-- Invio tramite Formspree (modulo mdearajn) -->
+        <form class="contact__form reveal reveal-delay-1" id="contactForm"
+              action="https://formspree.io/f/mdearajn" method="POST"
+              data-fallback-email="andrea@avconsulting.it"
+              aria-label="Modulo di contatto">
+          <input type="hidden" name="_subject" value="Nuovo contatto dal sito AV Consulting">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="fname">Nome <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="fname" name="nome" placeholder="Il tuo nome" required autocomplete="name">
+            </div>
+            <div class="form-field">
+              <label for="company">Azienda</label>
+              <input type="text" id="company" name="azienda" placeholder="Nome azienda" autocomplete="organization">
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" placeholder="email@azienda.it" required autocomplete="email">
+          </div>
+          <div class="form-field">
+            <label for="topic">Area di interesse</label>
+            <select id="topic" name="area">
+              <option value="" selected>Seleziona un'area</option>
+              <option>Growth · marketing e acquisizione clienti</option>
+              <option>Strategy · strategia commerciale e go-to-market</option>
+              <option>Execution · vendite, CRM e organizzazione</option>
+              <option>Interim / fractional director</option>
+              <option>Automotive advisory</option>
+              <option>Altro</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="message">Messaggio <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="message" name="messaggio" required placeholder="Descrivi brevemente la situazione o la sfida che stai affrontando..."></textarea>
+          </div>
+          <div class="form-hp" aria-hidden="true">
+            <label for="website">Non compilare questo campo</label>
+            <input type="text" id="website" name="_gotcha" tabindex="-1" autocomplete="off">
+          </div>
+          <label class="form-consent">
+            <input type="checkbox" name="consenso_privacy" value="sì" required>
+            <span>Ho letto l'<a href="privacy.html" target="_blank" rel="noopener">informativa privacy</a> e acconsento al trattamento dei miei dati per ricevere una risposta. <span class="req" aria-hidden="true">*</span></span>
+          </label>
+          <button type="submit" class="form-submit">
+            <span class="form-submit__label">Invia messaggio</span>
+            <svg width="14" height="14" fill="none" viewBox="0 0 14 14" aria-hidden="true">
+              <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          <p class="form-note">I campi con * sono obbligatori. I tuoi dati non verranno condivisi con terze parti. Rispondo personalmente entro 48 ore lavorative.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="index.html" aria-label="AV Consulting — Home">
+          <img src="assets/img/logo-av-consulting.png" alt="AV Consulting" class="footer__logo" width="566" height="120" loading="lazy">
+        </a>
+        <nav class="footer__links" aria-label="Pagine del sito">
+          <a href="chi-sono.html">Chi sono</a>
+          <a href="approccio.html">Approccio</a>
+          <a href="servizi.html">Servizi</a>
+          <a href="settori.html">Settori</a>
+          <a href="risultati.html">Risultati</a>
+          <a href="metodo.html">Metodo</a>
+          <a href="a-chi-mi-rivolgo.html">A chi mi rivolgo</a>
+          <a href="contatti.html">Contatti</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 AV Consulting · Andrea Volontè · P.IVA [xxxxxxxxxxxxxxx]</p>
+        <nav class="footer__links" aria-label="Link legali e social">
+          <a href="https://www.linkedin.com/in/andreavolonte" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="privacy.html">Privacy</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

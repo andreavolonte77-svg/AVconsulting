@@ -8,13 +8,25 @@ Per vederlo in locale basta aprire `index.html` nel browser.
 ## Struttura
 
 ```
-index.html            Home (pagina unica a sezioni)
-privacy.html          Informativa privacy (bozza da completare)
-css/style.css         Unico foglio di stile, palette in :root
-js/main.js            Menu mobile, animazioni, invio form
-assets/img/           Logo, favicon, icona iOS, immagine social (og-image.jpg)
+index.html               Home: hero e sintesi delle sezioni
+chi-sono.html            Biografia e percorso
+approccio.html           Approccio e punti di forza
+servizi.html             Tre aree: Growth, Strategy, Execution
+settori.html             Settori di specializzazione
+risultati.html           Risultati e numeri chiave
+metodo.html              Metodo di lavoro in cinque fasi
+a-chi-mi-rivolgo.html    Profili dei clienti ideali
+contatti.html            Modulo di contatto
+privacy.html             Informativa privacy (bozza da completare)
+css/style.css            Unico foglio di stile, palette in :root
+js/main.js               Menu mobile, animazioni, invio form
+assets/img/              Logo, illustrazione hero, foto, favicon, immagine social
+tools/hero_svg.py        Script che rigenera l'illustrazione dell'hero
 robots.txt, sitemap.xml  File per i motori di ricerca
 ```
+
+Header e footer sono ripetuti in ogni pagina: per aggiungere una voce di
+menu va modificata in tutti i file `.html`.
 
 ## Modulo contatti (Formspree)
 

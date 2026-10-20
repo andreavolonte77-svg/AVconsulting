@@ -133,7 +133,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
 }
 .nav__links {
   display: flex;
-  gap: 36px;
+  gap: 26px;
   align-items: center;
 }
 .nav__links a {
@@ -198,10 +198,12 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
   color: var(--graphite);
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1180px) {
   .nav__links { display: none; }
   .nav__cta.desktop { display: none; }
   .nav__burger { display: flex; }
+}
+@media (max-width: 860px) {
   .nav__logo { height: 32px; }
 }
 
@@ -235,7 +237,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
   transition: color 0.2s;
 }
 .btn-secondary:hover { color: var(--graphite); }
-.btn-secondary::after { content: '↓'; font-size: 15px; }
+.btn-secondary::after { content: '→'; font-size: 15px; }
 
 /* ─── Hero ──────────────────────────────────── */
 .hero {
@@ -1232,4 +1234,260 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
   font-weight: 600;
   color: var(--graphite);
   line-height: 1.3;
+}
+
+
+/* ═══════════════════════════════════════════════
+   SITO MULTIPAGINA
+═══════════════════════════════════════════════ */
+
+/* Voce di menu della pagina corrente */
+.nav__links a[aria-current="page"] {
+  color: var(--graphite);
+  box-shadow: 0 2px 0 var(--sand-gold);
+}
+.nav__mobile a[aria-current="page"] { color: var(--bordeaux); }
+.nav__cta[aria-current="page"] { background: var(--graphite); color: var(--white); }
+
+/* Prima sezione delle pagine interne: spazio per l'header fisso */
+.page-first { padding-top: calc(var(--nav-h) + clamp(40px, 6vw, 72px)); }
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--warm-gray);
+  margin-bottom: clamp(32px, 4vw, 48px);
+}
+.breadcrumb a { color: var(--warm-gray); border-bottom: 1px solid var(--sand-gold); }
+.breadcrumb a:hover { color: var(--graphite); }
+.breadcrumb [aria-current="page"] { color: var(--graphite); font-weight: 500; }
+.on-dark .breadcrumb,
+.on-dark .breadcrumb a { color: var(--warm-white); }
+.on-dark .breadcrumb [aria-current="page"] { color: var(--white); }
+
+/* Banda "pagina successiva" */
+.page-next {
+  background: var(--white);
+  border-top: 1px solid var(--warm-white);
+  padding-block: clamp(32px, 4vw, 48px);
+}
+.page-next__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.page-next__link { display: flex; flex-direction: column; gap: 4px; }
+.page-next__kicker {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--warm-gray);
+}
+.page-next__title {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 2.4vw, 30px);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--graphite);
+  transition: color 0.2s;
+}
+.page-next__link:hover .page-next__title { color: var(--bordeaux); }
+
+/* Link con freccia */
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--graphite);
+  border-bottom: 1px solid var(--sand-gold);
+  padding-bottom: 2px;
+  transition: color 0.2s, border-color 0.2s;
+}
+.link-arrow::after { content: '→'; transition: transform 0.2s; }
+.link-arrow:hover { color: var(--bordeaux); border-color: var(--bordeaux); }
+.link-arrow:hover::after { transform: translateX(3px); }
+.on-dark .link-arrow { color: var(--white); }
+.on-dark .link-arrow:hover { color: var(--soft-sand); border-color: var(--soft-sand); }
+
+/* Intestazione delle sezioni in home: titolo a sinistra, link a destra */
+.home-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px 40px;
+  margin-bottom: clamp(36px, 5vw, 56px);
+}
+.home-head .label { margin-bottom: 16px; }
+.on-dark .section-heading { color: var(--white); }
+
+/* Home · Chi sono */
+.home-intro { background: var(--white); }
+.home-intro__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 96px);
+  align-items: start;
+}
+.home-intro .label { margin-bottom: 20px; }
+.home-intro__body { display: flex; flex-direction: column; align-items: flex-start; gap: 20px; }
+.home-intro__body .bio__head { margin-bottom: 0; }
+.home-intro__body > p { font-size: 16px; line-height: 1.7; color: var(--warm-gray); }
+.home-intro__name {
+  font-family: var(--font-display);
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--graphite);
+  margin-bottom: 2px;
+}
+.home-intro__path {
+  font-family: var(--font-display);
+  font-size: 14px !important;
+  font-weight: 500;
+  color: var(--graphite) !important;
+  padding: 14px 0;
+  border-top: 1px solid var(--warm-white);
+  border-bottom: 1px solid var(--warm-white);
+  align-self: stretch;
+}
+@media (max-width: 860px) {
+  .home-intro__inner { grid-template-columns: 1fr; }
+}
+
+/* Home · Servizi */
+.home-services { background: var(--paper); }
+.home-areas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.home-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--white);
+  border: 1px solid var(--warm-white);
+  padding: 0 0 28px;
+  transition: border-color 0.2s;
+}
+.home-area > :not(figure) { margin-inline: 28px; }
+.home-area figure { margin-bottom: 14px; }
+.home-area:hover { border-color: var(--sand-gold); }
+.home-area:hover .media img { transform: scale(1.04); }
+.home-area__title {
+  font-family: var(--font-display);
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--graphite);
+}
+.home-area__desc { font-size: 15px; line-height: 1.6; color: var(--warm-gray); flex: 1; }
+.home-area .link-arrow { align-self: flex-start; margin-top: 6px; }
+.home-area .service-area__tag { margin-bottom: 0; }
+@media (max-width: 1000px) {
+  .home-areas { grid-template-columns: 1fr; max-width: 560px; }
+}
+
+/* Home · Settori */
+.home-sectors { background: var(--graphite); }
+.home-sectors__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--warm-gray);
+}
+.home-sectors__list li {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 24px 24px 24px 0;
+  border-bottom: 1px solid var(--warm-gray);
+}
+.home-sectors__tag {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--soft-sand);
+}
+.home-sectors__name {
+  font-family: var(--font-display);
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--white);
+}
+@media (max-width: 860px) {
+  .home-sectors__list { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px) {
+  .home-sectors__list { grid-template-columns: 1fr; }
+}
+
+/* Home · Metodo */
+.home-method { background: var(--white); }
+.home-method__steps {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  counter-reset: none;
+}
+.home-method__steps li {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 18px;
+  border-top: 2px solid var(--sand-gold);
+}
+.home-method__n {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--warm-gray);
+}
+.home-method__t {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--graphite);
+  line-height: 1.25;
+}
+@media (max-width: 860px) {
+  .home-method__steps { grid-template-columns: 1fr 1fr; gap: 24px 16px; }
+}
+
+/* Home · invito al contatto */
+.home-cta {
+  background: var(--paper);
+  border-top: 2px solid var(--sand-gold);
+}
+.home-cta__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 32px 60px;
+}
+.home-cta__inner p { margin-top: 16px; font-size: 16px; color: var(--warm-gray); max-width: 52ch; }
+.home-cta__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; }
+
+/* Footer su due righe */
+.footer__inner { margin-bottom: 24px; }
+.footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px 32px;
+  padding-top: 20px;
+  border-top: 1px solid var(--warm-white);
 }
