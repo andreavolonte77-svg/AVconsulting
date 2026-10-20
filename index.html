@@ -39,7 +39,6 @@
       "@type": "Person",
       "name": "Andrea Volontè",
       "jobTitle": "Consulente senior in Sales & Marketing",
-      "image": "https://avconsulting.it/assets/img/andrea-ritratto.jpg",
       "sameAs": ["https://www.linkedin.com/in/andreavolonte"]
     },
     "address": {
@@ -115,8 +114,6 @@
        HERO
   ═══════════════════════════════════════════════ -->
   <section class="hero" aria-labelledby="heroHeading">
-    <div class="hero__bg-line" aria-hidden="true"></div>
-    <div class="hero__bg-line-2" aria-hidden="true"></div>
     <div class="container">
       <div class="hero__inner">
         <div class="hero__main">
@@ -143,6 +140,14 @@
           <div class="hero__gold-line" aria-hidden="true"></div>
         </div>
         <div class="hero__side">
+          <figure class="media hero__media">
+            <picture>
+              <source type="image/webp" srcset="assets/img/hero-480.webp 480w, assets/img/hero-960.webp 960w" sizes="(max-width: 860px) 100vw, 400px">
+              <img src="assets/img/hero-480.jpg" srcset="assets/img/hero-480.jpg 480w, assets/img/hero-960.jpg 960w" sizes="(max-width: 860px) 100vw, 400px"
+                   width="480" height="600" fetchpriority="high" decoding="async"
+                   alt="Professionisti attorno a un tavolo di legno durante una riunione di lavoro, uno prende appunti su un taccuino">
+            </picture>
+          </figure>
           <div class="hero__stats">
             <div>
               <div class="hero__stat-num">20<span>+</span></div>
@@ -196,17 +201,19 @@
   <section class="bio section-pad" id="about" aria-labelledby="aboutHeading">
     <div class="container">
       <div class="bio__inner">
-        <figure class="bio__photo reveal">
-          <picture>
-            <source srcset="assets/img/andrea-ritratto.webp" type="image/webp">
-            <img src="assets/img/andrea-ritratto.jpg" width="400" height="500" loading="lazy"
-                 alt="Andrea Volontè, fondatore di AV Consulting, in giacca blu e camicia bianca con le braccia conserte">
-          </picture>
-        </figure>
         <div class="bio__content">
           <p class="label">Chi sono</p>
-          <h2 class="section-heading bio__name reveal" id="aboutHeading">Andrea Volontè</h2>
-          <p class="bio__role reveal">Consulente senior in Sales &amp; Marketing · Fondatore di AV Consulting</p>
+          <div class="bio__head reveal">
+            <picture>
+              <source srcset="assets/img/andrea-avatar.webp" type="image/webp">
+              <img class="bio__avatar" src="assets/img/andrea-avatar.jpg" width="160" height="160" loading="lazy"
+                   alt="Andrea Volontè, fondatore di AV Consulting">
+            </picture>
+            <div>
+              <h2 class="section-heading bio__name" id="aboutHeading">Andrea Volontè</h2>
+              <p class="bio__role">Consulente senior in Sales &amp; Marketing · Fondatore di AV Consulting</p>
+            </div>
+          </div>
           <div class="bio__body reveal reveal-delay-1">
             <p>
               Ho costruito la mia esperienza in oltre vent'anni di ruoli di leadership in ambito
@@ -222,6 +229,17 @@
               misuro i risultati con i dati.
             </p>
           </div>
+          <div class="bio__actions reveal reveal-delay-2">
+            <a href="#contact" class="btn-primary">
+              Parliamone
+              <svg width="14" height="14" fill="none" viewBox="0 0 14 14" aria-hidden="true">
+                <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/andreavolonte" class="btn-secondary bio__linkedin" target="_blank" rel="noopener">Profilo LinkedIn</a>
+          </div>
+        </div>
+        <div class="bio__side">
           <div class="bio__path reveal reveal-delay-1">
             <h3 class="bio__path-title">Percorso</h3>
             <ol class="timeline">
@@ -263,15 +281,6 @@
               <dd>Milano · disponibile anche da remoto</dd>
             </div>
           </dl>
-          <div class="bio__actions reveal reveal-delay-2">
-            <a href="#contact" class="btn-primary">
-              Parliamone
-              <svg width="14" height="14" fill="none" viewBox="0 0 14 14" aria-hidden="true">
-                <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </a>
-            <a href="https://www.linkedin.com/in/andreavolonte" class="btn-secondary bio__linkedin" target="_blank" rel="noopener">Profilo LinkedIn</a>
-          </div>
         </div>
       </div>
     </div>
