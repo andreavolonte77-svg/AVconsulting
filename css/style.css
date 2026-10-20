@@ -1186,7 +1186,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
 .timeline {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 16px;
   position: relative;
   padding-top: 22px;
