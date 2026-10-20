@@ -1158,6 +1158,7 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
 @media (max-width: 860px) {
   .hero__inner { grid-template-columns: 1fr; }
   .hero__media { aspect-ratio: 4 / 3; }
+  .hero__media img { object-position: 50% 80%; }
 }
 
 /* Segnaposto testuale da completare */
