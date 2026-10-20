@@ -1020,12 +1020,6 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
 .legal p + p { margin-top: 12px; }
 .legal ul { list-style: disc; padding-left: 22px; }
 .legal a { color: var(--graphite); text-decoration: underline; text-decoration-color: var(--sand-gold); }
-.legal .todo {
-  background: var(--paper);
-  border-left: 3px solid var(--bordeaux);
-  padding: 2px 6px;
-  color: var(--graphite);
-}
 
 /* ─── Immagini ──────────────────────────────────
    .media è il contenitore con proporzione fissa; finché la foto
@@ -1062,46 +1056,109 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
 .on-dark .media { background: color-mix(in srgb, var(--graphite) 80%, var(--white)); }
 .on-dark .media--empty::after { color: var(--warm-white); }
 
-/* Hero: ritratto sopra i numeri chiave */
-.hero__inner { grid-template-columns: 1fr minmax(300px, 400px); }
-.hero__photo { margin-bottom: 32px; }
-.hero__photo::before {
+/* ─── Chi sono ──────────────────────────────── */
+.bio { background: var(--paper); }
+.bio__inner {
+  display: grid;
+  grid-template-columns: minmax(260px, 5fr) 7fr;
+  gap: clamp(40px, 6vw, 96px);
+  align-items: center;
+}
+.bio__photo {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  max-width: 440px;
+  width: 100%;
+  background: var(--graphite);
+}
+.bio__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Cornice: linea sand gold sfalsata dietro la foto */
+.bio__photo::before {
   content: '';
   position: absolute;
-  left: 0; right: 0; bottom: 0;
-  height: 3px;
-  background: var(--sand-gold);
-  z-index: 1;
+  inset: 20px -20px -20px 20px;
+  border: 1px solid var(--sand-gold);
+  z-index: -1;
 }
-@media (min-width: 861px) {
-  .hero__stats {
-    flex-direction: row;
-    gap: 20px;
-    border-left: none;
-    border-top: 1px solid var(--sand-gold);
-    padding: 24px 0 0;
-  }
-  .hero__stats > div { flex: 1; }
-  .hero__stat-num { font-size: 32px; }
-  .hero__stat-label { font-size: 13px; }
-  .hero__stat-label br { display: none; }
+.bio__inner { position: relative; z-index: 0; }
+.bio__content .label { margin-bottom: 20px; }
+.bio__name { margin-bottom: 8px; }
+.bio__role {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--bordeaux);
+  margin-bottom: 28px;
 }
+.bio__body {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--warm-gray);
+  max-width: 62ch;
+}
+.bio__body p + p { margin-top: 16px; }
+.bio__body strong { color: var(--graphite); font-weight: 600; }
+.bio__facts {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--warm-white);
+  border: 1px solid var(--warm-white);
+}
+.bio__facts > div { background: var(--white); padding: 18px 20px; }
+.bio__facts dt {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--warm-gray);
+  margin-bottom: 4px;
+}
+.bio__facts dd {
+  font-size: 15px;
+  color: var(--graphite);
+  line-height: 1.45;
+}
+.bio__actions {
+  margin-top: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 28px;
+}
+.bio__linkedin::after { content: '↗'; }
+
 @media (max-width: 860px) {
-  .hero__inner { grid-template-columns: 1fr; }
-  .hero__photo { aspect-ratio: 4 / 3; }
+  .bio__inner { grid-template-columns: 1fr; }
+  .bio__photo { max-width: 360px; margin-right: 20px; }
+}
+@media (max-width: 480px) {
+  .bio__facts { grid-template-columns: 1fr; }
 }
 
-/* Profilo: testo e ritratto, pilastri sotto in riga */
-.about__inner { margin-bottom: clamp(48px, 6vw, 80px); align-items: center; }
-.about__media { max-width: 480px; justify-self: end; width: 100%; }
+/* Segnaposto testuale da completare */
+.todo {
+  background: var(--paper);
+  border-left: 3px solid var(--bordeaux);
+  padding: 2px 8px;
+  color: var(--graphite);
+}
+.bio .todo { background: var(--white); }
+
+/* Approccio: titolo e citazione, pilastri sotto in riga */
+.about__inner { margin-bottom: clamp(48px, 6vw, 72px); align-items: end; }
+.about__heading { margin: 20px 0 0; }
+.about__quote { margin-top: 0; }
 .about__pillars { display: grid; grid-template-columns: repeat(4, 1fr); }
 .about__pillar { flex-direction: column; gap: 12px; }
 @media (max-width: 1000px) {
   .about__pillars { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 860px) {
-  .about__media { justify-self: stretch; max-width: none; }
-  .about__media .media { aspect-ratio: 4 / 3; }
 }
 @media (max-width: 600px) {
   .about__pillars { grid-template-columns: 1fr; }

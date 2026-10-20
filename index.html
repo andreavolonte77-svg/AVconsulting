@@ -80,7 +80,7 @@
         </a>
         <nav aria-label="Navigazione principale">
           <ul class="nav__links">
-            <li><a href="#about">Profilo</a></li>
+            <li><a href="#about">Chi sono</a></li>
             <li><a href="#services">Servizi</a></li>
             <li><a href="#sectors">Settori</a></li>
             <li><a href="#results">Risultati</a></li>
@@ -94,7 +94,7 @@
       </div>
     </div>
     <nav class="nav__mobile" id="mobileMenu" aria-label="Menu mobile">
-      <a href="#about">Profilo</a>
+      <a href="#about">Chi sono</a>
       <a href="#services">Servizi</a>
       <a href="#sectors">Settori</a>
       <a href="#results">Risultati</a>
@@ -136,8 +136,6 @@
           <div class="hero__gold-line" aria-hidden="true"></div>
         </div>
         <div class="hero__side">
-          <!-- FOTO: assets/img/foto/andrea-hero.jpg (ritratto mezzo busto, braccia conserte) -->
-          <figure class="media media--4x5 hero__photo media--empty" data-label="Ritratto · in arrivo"></figure>
           <div class="hero__stats">
             <div>
               <div class="hero__stat-num">20<span>+</span></div>
@@ -188,15 +186,22 @@
   <!-- ═══════════════════════════════════════════════
        ABOUT
   ═══════════════════════════════════════════════ -->
-  <section class="about section-pad" id="about" aria-labelledby="aboutHeading">
+  <section class="bio section-pad" id="about" aria-labelledby="aboutHeading">
     <div class="container">
-      <div class="about__inner">
-        <div class="about__text-col">
-          <p class="label about__eyebrow">Profilo</p>
-          <h2 class="section-heading about__heading reveal" id="aboutHeading">
-            Strategia e execution.<br>Non una senza l'altra.
-          </h2>
-          <div class="about__body reveal reveal-delay-1">
+      <div class="bio__inner">
+        <figure class="bio__photo reveal">
+          <picture>
+            <source srcset="assets/img/andrea-ritratto.webp" type="image/webp">
+            <img src="assets/img/andrea-ritratto.jpg" width="400" height="500" loading="lazy"
+                 alt="Andrea, fondatore di AV Consulting, in giacca blu e camicia bianca con le braccia conserte">
+          </picture>
+        </figure>
+        <div class="bio__content">
+          <p class="label">Chi sono</p>
+          <!-- DA COMPLETARE: cognome -->
+          <h2 class="section-heading bio__name reveal" id="aboutHeading">Andrea <span class="todo">[Cognome]</span></h2>
+          <p class="bio__role reveal">Consulente senior in Sales &amp; Marketing · Fondatore di AV Consulting</p>
+          <div class="bio__body reveal reveal-delay-1">
             <p>
               Ho costruito la mia esperienza in oltre vent'anni di ruoli di leadership in ambito
               <strong>sales, marketing e crescita commerciale</strong>, in aziende automotive, marketplace
@@ -205,27 +210,65 @@
               di monetizzazione.
             </p>
             <p>
-              Non mi occupo solo di strategia: rimango operativo, affianco le organizzazioni
-              nell'esecuzione e misuro i risultati con i dati. Il mio approccio è
-              <strong>analitico, diretto e orientato all'impatto commerciale reale</strong>.
-            </p>
-            <p>
-              Lavoro come <strong>consulente senior, fractional director e advisor</strong> per aziende
+              Oggi lavoro come <strong>consulente senior, fractional director e advisor</strong> per aziende
               che devono crescere, trasformarsi o riorganizzare il proprio modello commerciale
-              e di marketing.
+              e di marketing. Rimango operativo: affianco le organizzazioni nell'esecuzione e
+              misuro i risultati con i dati.
             </p>
+            <!-- DA COMPLETARE: tappe principali del percorso (aziende, ruoli, formazione) -->
+            <p class="todo">[Percorso: aziende e ruoli principali, formazione — da completare]</p>
           </div>
-          <blockquote class="about__quote reveal reveal-delay-2">
-            <p>
-              "Un piano che non si traduce in azioni concrete non vale nulla.
-              Sono qui per costruire sia il piano che l'execution."
-            </p>
-          </blockquote>
+          <dl class="bio__facts reveal reveal-delay-2">
+            <div>
+              <dt>Esperienza</dt>
+              <dd>Oltre 20 anni in sales &amp; marketing leadership</dd>
+            </div>
+            <div>
+              <dt>Settori</dt>
+              <dd>Automotive, marketplace digitali, B2B e B2C</dd>
+            </div>
+            <div>
+              <dt>Ruoli</dt>
+              <dd>Consulente senior, fractional director, advisor</dd>
+            </div>
+            <div>
+              <dt>Base</dt>
+              <dd>Milano · disponibile anche da remoto</dd>
+            </div>
+          </dl>
+          <div class="bio__actions reveal reveal-delay-2">
+            <a href="#contact" class="btn-primary">
+              Parliamone
+              <svg width="14" height="14" fill="none" viewBox="0 0 14 14" aria-hidden="true">
+                <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <!-- DA COMPLETARE: indirizzo del profilo LinkedIn -->
+            <a href="https://www.linkedin.com/" class="btn-secondary bio__linkedin" rel="noopener">Profilo LinkedIn</a>
+          </div>
         </div>
-        <div class="about__media reveal reveal-delay-1">
-          <!-- FOTO: assets/img/foto/andrea-profilo.jpg (seduto sulla poltrona) -->
-          <figure class="media media--4x5 media--empty" data-label="Ritratto · in arrivo"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       APPROCCIO
+  ═══════════════════════════════════════════════ -->
+  <section class="about section-pad" id="approach" aria-labelledby="approachHeading">
+    <div class="container">
+      <div class="about__inner">
+        <div>
+          <p class="label about__eyebrow">Approccio</p>
+          <h2 class="section-heading about__heading reveal" id="approachHeading">
+            Strategia e execution.<br>Non una senza l'altra.
+          </h2>
         </div>
+        <blockquote class="about__quote reveal reveal-delay-1">
+          <p>
+            "Un piano che non si traduce in azioni concrete non vale nulla.
+            Sono qui per costruire sia il piano che l'execution."
+          </p>
+        </blockquote>
       </div>
         <div class="about__pillars reveal">
           <div class="about__pillar">
@@ -282,7 +325,7 @@
       <div class="service-areas">
 
         <article class="service-area reveal" id="growth" aria-labelledby="areaGrowth">
-          <!-- FOTO: assets/img/foto/area-growth.jpg -->
+          <!-- FOTO: assets/img/area-growth.jpg -->
           <figure class="media media--3x2 service-area__media media--empty" data-label="Foto · analisi dati e campagne"></figure>
           <p class="service-area__tag"><span aria-hidden="true">01</span> Growth</p>
           <h3 class="service-area__title" id="areaGrowth">Marketing e acquisizione clienti</h3>
@@ -309,7 +352,7 @@
         </article>
 
         <article class="service-area reveal reveal-delay-1" id="strategy" aria-labelledby="areaStrategy">
-          <!-- FOTO: assets/img/foto/area-strategy.jpg -->
+          <!-- FOTO: assets/img/area-strategy.jpg -->
           <figure class="media media--3x2 service-area__media media--empty" data-label="Foto · pianificazione strategica"></figure>
           <p class="service-area__tag"><span aria-hidden="true">02</span> Strategy</p>
           <h3 class="service-area__title" id="areaStrategy">Strategia commerciale e go-to-market</h3>
@@ -336,7 +379,7 @@
         </article>
 
         <article class="service-area reveal reveal-delay-2" id="execution" aria-labelledby="areaExecution">
-          <!-- FOTO: assets/img/foto/area-execution.jpg -->
+          <!-- FOTO: assets/img/area-execution.jpg -->
           <figure class="media media--3x2 service-area__media media--empty" data-label="Foto · team commerciale al lavoro"></figure>
           <p class="service-area__tag"><span aria-hidden="true">03</span> Execution</p>
           <h3 class="service-area__title" id="areaExecution">Vendite, CRM e organizzazione commerciale</h3>
@@ -385,42 +428,42 @@
       </div>
       <div class="sectors__grid">
         <div class="sector-card reveal">
-          <!-- FOTO: assets/img/foto/settore-automotive.jpg -->
+          <!-- FOTO: assets/img/settore-automotive.jpg -->
           <figure class="media media--16x9 sector-card__media media--empty" data-label="Foto · showroom auto"></figure>
           <p class="sector-card__tag">Verticale principale</p>
           <h3 class="sector-card__title">Automotive</h3>
           <p class="sector-card__desc">OEM, importatori, dealer group, fleet, accessori e aftermarket. Conosco le dinamiche competitive, i cicli di acquisto e le leve di margine.</p>
         </div>
         <div class="sector-card reveal reveal-delay-1">
-          <!-- FOTO: assets/img/foto/settore-marketplace.jpg -->
+          <!-- FOTO: assets/img/settore-marketplace.jpg -->
           <figure class="media media--16x9 sector-card__media media--empty" data-label="Foto · annunci su smartphone"></figure>
           <p class="sector-card__tag">Piattaforme digitali</p>
           <h3 class="sector-card__title">Marketplace digitali</h3>
           <p class="sector-card__desc">Piattaforme di annunci, comparatori, marketplace verticali e orizzontali. Monetizzazione, crescita della base clienti, sviluppo della categoria.</p>
         </div>
         <div class="sector-card reveal reveal-delay-2">
-          <!-- FOTO: assets/img/foto/settore-b2b.jpg -->
+          <!-- FOTO: assets/img/settore-b2b.jpg -->
           <figure class="media media--16x9 sector-card__media media--empty" data-label="Foto · incontro tra aziende"></figure>
           <p class="sector-card__tag">Mercato business</p>
           <h3 class="sector-card__title">Business B2B</h3>
           <p class="sector-card__desc">Aziende che vendono ad altre aziende: cicli lunghi, relazioni complesse, go-to-market multicanale e marketing a supporto della rete commerciale.</p>
         </div>
         <div class="sector-card reveal reveal-delay-1">
-          <!-- FOTO: assets/img/foto/settore-b2c.jpg -->
+          <!-- FOTO: assets/img/settore-b2c.jpg -->
           <figure class="media media--16x9 sector-card__media media--empty" data-label="Foto · cliente e acquisto"></figure>
           <p class="sector-card__tag">Mercato consumer</p>
           <h3 class="sector-card__title">Business B2C</h3>
           <p class="sector-card__desc">Consumer journey, acquisition, retention e loyalty. Dalla campagna di awareness alla conversione misurabile, con il cliente al centro.</p>
         </div>
         <div class="sector-card reveal reveal-delay-2">
-          <!-- FOTO: assets/img/foto/settore-dealer.jpg -->
+          <!-- FOTO: assets/img/settore-dealer.jpg -->
           <figure class="media media--16x9 sector-card__media media--empty" data-label="Foto · concessionaria"></figure>
           <p class="sector-card__tag">Reti di vendita</p>
           <h3 class="sector-card__title">Dealer network &amp; reti commerciali</h3>
           <p class="sector-card__desc">Sviluppo, gestione e ottimizzazione di reti commerciali complesse. Training, incentivazione, strumenti e performance management.</p>
         </div>
         <div class="sector-card reveal reveal-delay-3">
-          <!-- FOTO: assets/img/foto/settore-mobility.jpg -->
+          <!-- FOTO: assets/img/settore-mobility.jpg -->
           <figure class="media media--16x9 sector-card__media media--empty" data-label="Foto · auto elettrica in ricarica"></figure>
           <p class="sector-card__tag">Nuovi mercati</p>
           <h3 class="sector-card__title">Mobility &amp; servizi connessi</h3>
@@ -680,7 +723,7 @@
         <img src="assets/img/logo-av-consulting.png" alt="AV Consulting" class="footer__logo" width="566" height="120" loading="lazy">
         <p class="footer__copy">© 2026 AV Consulting · P.IVA [xxxxxxxxxxxxxxx]</p>
         <nav class="footer__links" aria-label="Link footer">
-          <a href="#about">Profilo</a>
+          <a href="#about">Chi sono</a>
           <a href="#services">Servizi</a>
           <a href="#contact">Contatti</a>
           <a href="privacy.html">Privacy</a>
