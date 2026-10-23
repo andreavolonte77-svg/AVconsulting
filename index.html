@@ -114,9 +114,9 @@
         <div class="hero__main">
           <p class="label hero__label">Consulenza Senior · Sales &amp; Marketing</p>
           <h1 class="hero__headline" id="heroHeading">
-            Crescita ricavi,<br>
-            <em>trasformazione</em><br>
-            commerciale.
+            <span class="hl"><span>Crescita ricavi,</span></span>
+            <span class="hl"><span><em>trasformazione</em></span></span>
+            <span class="hl"><span>commerciale.</span></span>
           </h1>
           <p class="hero__sub">
             Affianco CEO, direttori commerciali e direttori marketing nel costruire
@@ -141,15 +141,15 @@
           </figure>
           <div class="hero__stats">
             <div>
-              <div class="hero__stat-num">20<span>+</span></div>
+              <div class="hero__stat-num"><span class="count" data-to="20">20</span><span>+</span></div>
               <p class="hero__stat-label">anni di esperienza in<br> sales &amp; marketing leadership</p>
             </div>
             <div>
-              <div class="hero__stat-num">3<span>x</span></div>
+              <div class="hero__stat-num"><span class="count" data-to="3">3</span><span>x</span></div>
               <p class="hero__stat-label">crescita ricavi guidata<br> in contesti marketplace</p>
             </div>
             <div>
-              <div class="hero__stat-num">+40<span>%</span></div>
+              <div class="hero__stat-num">+<span class="count" data-to="40">40</span><span>%</span></div>
               <p class="hero__stat-label">lead qualificati<br> in campagne di demand generation</p>
             </div>
           </div>
@@ -193,24 +193,81 @@
         </div>
         <a class="link-arrow" href="servizi.html">Tutti i servizi</a>
       </div>
-      <div class="home-areas reveal">
-        <a class="home-area" href="servizi.html#growth">
-          <span class="service-area__tag"><span aria-hidden="true">01</span> Growth</span>
-          <span class="home-area__title">Marketing e acquisizione clienti</span>
-          <span class="home-area__desc">Marketing che genera pipeline e ricavi, non solo visibilità: dalla lead generation alla monetizzazione della base clienti.</span>
-          <span class="link-arrow">Scopri</span>
+      <div class="home-areas" data-areas>
+        <a class="area-panel is-active" href="servizi.html#growth">
+          <span class="area-panel__top">
+            <span class="area-panel__num" aria-hidden="true">01</span>
+            <svg class="area-panel__icon" viewBox="0 0 120 64" aria-hidden="true">
+              <g class="ico-grid"><line x1="4" y1="60" x2="116" y2="60"/><line x1="4" y1="40" x2="116" y2="40"/><line x1="4" y1="20" x2="116" y2="20"/></g>
+              <path class="draw ico-fill" d="M4 54 L30 44 L52 48 L78 26 L100 30 L116 8 L116 60 L4 60 Z"/>
+              <path class="draw ico-line" pathLength="1" d="M4 54 L30 44 L52 48 L78 26 L100 30 L116 8"/>
+              <circle class="ico-dot" cx="116" cy="8" r="3.5"/>
+            </svg>
+          </span>
+          <span class="service-area__tag">Growth</span>
+          <span class="area-panel__title">Marketing e acquisizione clienti</span>
+          <span class="area-panel__more">
+            <span class="area-panel__inner">
+              <span class="area-panel__desc">Marketing che genera pipeline e ricavi, non solo visibilità: dalla lead generation alla monetizzazione della base clienti.</span>
+              <ul class="area-panel__list">
+                <li>Performance marketing &amp; lead generation</li>
+                <li>Marketing B2B</li>
+                <li>Marketing B2C</li>
+                <li>Marketplace growth &amp; monetization</li>
+              </ul>
+              <span class="link-arrow">Scopri l'area</span>
+            </span>
+          </span>
         </a>
-        <a class="home-area" href="servizi.html#strategy">
-          <span class="service-area__tag"><span aria-hidden="true">02</span> Strategy</span>
-          <span class="home-area__title">Strategia commerciale e go-to-market</span>
-          <span class="home-area__desc">Dove competere, con quale offerta e a che prezzo. Un modello di crescita strutturato e immediatamente eseguibile.</span>
-          <span class="link-arrow">Scopri</span>
+        <a class="area-panel" href="servizi.html#strategy">
+          <span class="area-panel__top">
+            <span class="area-panel__num" aria-hidden="true">02</span>
+            <svg class="area-panel__icon" viewBox="0 0 120 64" aria-hidden="true">
+              <path class="ico-ghost" d="M6 56 C30 56 26 32 52 32 S82 10 112 10"/>
+              <path class="draw ico-line" pathLength="1" d="M6 56 C30 56 26 32 52 32 S82 10 112 10"/>
+              <circle class="ico-node" cx="6" cy="56" r="3.5"/><circle class="ico-node" cx="52" cy="32" r="3.5"/>
+              <circle class="ico-dot" cx="112" cy="10" r="4.5"/><circle class="ico-pulse" cx="112" cy="10" r="4.5"/>
+            </svg>
+          </span>
+          <span class="service-area__tag">Strategy</span>
+          <span class="area-panel__title">Strategia commerciale e go-to-market</span>
+          <span class="area-panel__more">
+            <span class="area-panel__inner">
+              <span class="area-panel__desc">Dove competere, con quale offerta e a che prezzo. Un modello di crescita strutturato e immediatamente eseguibile.</span>
+              <ul class="area-panel__list">
+                <li>Commercial strategy &amp; go-to-market</li>
+                <li>Pricing &amp; revenue optimization</li>
+                <li>Product launch &amp; campaign strategy</li>
+                <li>Automotive ecosystem advisory</li>
+              </ul>
+              <span class="link-arrow">Scopri l'area</span>
+            </span>
+          </span>
         </a>
-        <a class="home-area" href="servizi.html#execution">
-          <span class="service-area__tag"><span aria-hidden="true">03</span> Execution</span>
-          <span class="home-area__title">Vendite, CRM e organizzazione commerciale</span>
-          <span class="home-area__desc">Processi, strumenti e persone che trasformano il piano in risultati, con un affiancamento operativo al team.</span>
-          <span class="link-arrow">Scopri</span>
+        <a class="area-panel" href="servizi.html#execution">
+          <span class="area-panel__top">
+            <span class="area-panel__num" aria-hidden="true">03</span>
+            <svg class="area-panel__icon" viewBox="0 0 120 64" aria-hidden="true">
+              <g class="ico-track"><rect x="4" y="8" width="112" height="8" rx="1"/><rect x="4" y="28" width="112" height="8" rx="1"/><rect x="4" y="48" width="112" height="8" rx="1"/></g>
+              <rect class="ico-bar" style="--d:0s" x="4" y="8" width="104" height="8" rx="1"/>
+              <rect class="ico-bar" style="--d:.15s" x="4" y="28" width="80" height="8" rx="1"/>
+              <rect class="ico-bar" style="--d:.3s" x="4" y="48" width="60" height="8" rx="1"/>
+            </svg>
+          </span>
+          <span class="service-area__tag">Execution</span>
+          <span class="area-panel__title">Vendite, CRM e organizzazione commerciale</span>
+          <span class="area-panel__more">
+            <span class="area-panel__inner">
+              <span class="area-panel__desc">Processi, strumenti e persone che trasformano il piano in risultati, con un affiancamento operativo al team.</span>
+              <ul class="area-panel__list">
+                <li>Sales transformation</li>
+                <li>Digital sales enablement</li>
+                <li>CRM &amp; customer lifecycle</li>
+                <li>Interim leadership &amp; advisory</li>
+              </ul>
+              <span class="link-arrow">Scopri l'area</span>
+            </span>
+          </span>
         </a>
       </div>
     </div>
