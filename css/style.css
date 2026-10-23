@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════
-   AV Consulting — foglio di stile unico
+   Advance Vector Consulting — foglio di stile unico
    Palette e tipografia dal brand kit
 ═══════════════════════════════════════════════ */
 
@@ -126,11 +126,17 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
   justify-content: space-between;
   gap: 24px;
 }
-.nav__logo {
-  height: 38px;
-  width: auto;
-  flex-shrink: 0;
-}
+/* ─── Logo Advance Vector Consulting (concept B · La V è il vettore) ─── */
+.brand { display: inline-flex; align-items: center; gap: var(--brand-gap); flex-shrink: 0; line-height: 1; color: var(--graphite); }
+.brand__mark { height: var(--brand-h); width: auto; display: block; overflow: visible; }
+.brand__rule { width: 1px; align-self: stretch; background: var(--sand-gold); }
+.brand__type { display: flex; flex-direction: column; gap: calc(var(--brand-h) * 0.17); }
+.brand__name { font-family: var(--font-display); font-weight: 700; font-size: calc(var(--brand-h) * 0.5); letter-spacing: 0.04em; white-space: nowrap; color: var(--graphite); }
+.brand__desc { font-family: var(--font-body); font-weight: 500; font-size: calc(var(--brand-h) * 0.24); letter-spacing: 0.46em; white-space: nowrap; color: var(--warm-gray); }
+.brand--nav    { --brand-h: 34px; --brand-gap: 14px; }
+.brand--footer { --brand-h: 30px; --brand-gap: 12px; }
+@media (max-width: 860px) { .brand--nav { --brand-h: 30px; --brand-gap: 12px; } }
+@media (max-width: 340px) { .brand--nav .brand__rule, .brand--nav .brand__type { display: none; } }
 .nav__links {
   display: flex;
   gap: 26px;
@@ -204,7 +210,6 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
   .nav__burger { display: flex; }
 }
 @media (max-width: 860px) {
-  .nav__logo { height: 32px; }
 }
 
 /* ─── Buttons ───────────────────────────────── */
@@ -957,7 +962,6 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
   gap: 20px 32px;
   flex-wrap: wrap;
 }
-.footer__logo { height: 30px; width: auto; }
 .footer__copy {
   font-size: 13px;
   color: var(--warm-gray);

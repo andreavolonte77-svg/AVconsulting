@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://avconsulting.it/sitemap.xml
+Sitemap: https://www.advancevector.it/sitemap.xml

@@ -1,6 +1,6 @@
-# AV Consulting — sito web
+# Advance Vector Consulting — sito web
 
-Sito vetrina di AV Consulting · *Growth. Strategy. Execution.*
+Sito vetrina di Advance Vector Consulting · *Growth. Strategy. Execution.*
 
 Sito statico: HTML + CSS + JS minimo, nessun framework, nessuna build.
 Per vederlo in locale basta aprire `index.html` nel browser.
@@ -42,6 +42,6 @@ del form in `index.html`.
 - P.IVA nel footer di `index.html` e `privacy.html`
 - Campi `[...]` in `privacy.html`, da far verificare a un consulente privacy
 - Dominio: canonical, Open Graph, sitemap e dati strutturati usano
-  `https://avconsulting.it/` (cercare e sostituire se diverso)
+  `https://www.advancevector.it/` (cercare e sostituire se diverso)
 - Dopo la pubblicazione: registrare il sito su Google Search Console
   e inviare `sitemap.xml`
