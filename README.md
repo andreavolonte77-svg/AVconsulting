@@ -12,6 +12,7 @@ index.html               Home: hero e sintesi delle sezioni
 chi-sono.html            Biografia e percorso
 approccio.html           Approccio e punti di forza
 servizi.html             Tre aree: Growth, Strategy, Execution
+ai.html                  AI per il business: l'AI come acceleratore trasversale
 settori.html             Settori di specializzazione
 risultati.html           Risultati e numeri chiave
 metodo.html              Metodo di lavoro in cinque fasi

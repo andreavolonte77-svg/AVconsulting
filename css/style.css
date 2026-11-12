@@ -1653,3 +1653,181 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
   padding-top: 20px;
   border-top: 1px solid var(--warm-white);
 }
+
+/* ═══════════════════════════════════════════════
+   AI PER IL BUSINESS (acceleratore trasversale)
+═══════════════════════════════════════════════ */
+
+/* Link nel testo */
+.inline-link {
+  color: var(--graphite);
+  text-decoration: underline;
+  text-decoration-color: var(--sand-gold);
+  text-underline-offset: 3px;
+}
+.inline-link:hover { color: var(--bordeaux); text-decoration-color: var(--bordeaux); }
+
+/* Home · banda AI su fondo grafite */
+.home-ai { background: var(--graphite); }
+.home-ai__inner {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: clamp(40px, 6vw, 96px);
+  align-items: center;
+}
+.home-ai__text { display: flex; flex-direction: column; align-items: flex-start; gap: 20px; }
+.home-ai__text > p:not(.label) { font-size: 17px; line-height: 1.7; color: var(--warm-white); max-width: 54ch; }
+.home-ai__steps {
+  list-style: none;
+  border-top: 1px solid var(--warm-gray);
+}
+.home-ai__steps li {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--warm-gray);
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--white);
+}
+.home-ai__steps span {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--sand-gold);
+  min-width: 22px;
+}
+@media (max-width: 860px) {
+  .home-ai__inner { grid-template-columns: 1fr; }
+}
+
+/* Pagina AI · introduzione */
+.ai-intro { background: var(--paper); }
+.ai-intro__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 96px);
+  align-items: end;
+}
+.ai-intro .label { margin-bottom: 20px; }
+.ai-intro__heading { font-size: clamp(36px, 4.6vw, 60px); line-height: 1.05; }
+.ai-intro__body p { font-size: 17px; line-height: 1.75; color: var(--warm-gray); }
+.ai-intro__body p + p { margin-top: 16px; }
+.ai-intro__body strong { color: var(--graphite); font-weight: 600; }
+
+/* Pagina AI · il problema */
+.ai-problem { background: var(--graphite); }
+.ai-problem__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 96px);
+  align-items: start;
+}
+.ai-problem .label { margin-bottom: 20px; }
+.ai-problem__body p { font-size: 17px; line-height: 1.75; color: var(--warm-white); }
+.ai-principle {
+  margin-top: 28px;
+  padding-left: 20px;
+  border-left: 3px solid var(--sand-gold);
+  font-family: var(--font-display);
+  font-size: 22px !important;
+  font-weight: 600;
+  color: var(--white) !important;
+}
+
+/* Pagina AI · le quattro fasi */
+.ai-steps { background: var(--white); }
+.ai-steps__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.ai-steps__list li {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 20px;
+  border-top: 2px solid var(--sand-gold);
+}
+.ai-steps__n {
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--bordeaux);
+}
+.ai-steps__list h3 {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--graphite);
+}
+.ai-steps__list p { font-size: 15px; line-height: 1.6; color: var(--warm-gray); }
+
+/* Pagina AI · applicazioni nelle tre aree */
+.ai-uses { background: var(--paper); }
+.ai-uses__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.ai-use {
+  background: var(--white);
+  border: 1px solid var(--warm-white);
+  border-top: 2px solid var(--sand-gold);
+  padding: 28px;
+}
+.ai-use ul { list-style: none; display: grid; gap: 12px; }
+.ai-use li {
+  position: relative;
+  padding-left: 18px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--graphite);
+}
+.ai-use li::before {
+  content: '';
+  position: absolute;
+  left: 0; top: .65em;
+  width: 9px; height: 1px;
+  background: var(--bordeaux);
+}
+
+@media (max-width: 1000px) {
+  .ai-steps__list { grid-template-columns: 1fr 1fr; gap: 32px 20px; }
+  .ai-uses__grid { grid-template-columns: 1fr; max-width: 560px; }
+}
+@media (max-width: 860px) {
+  .ai-intro__inner, .ai-problem__inner { grid-template-columns: 1fr; }
+}
+@media (max-width: 520px) {
+  .ai-steps__list { grid-template-columns: 1fr; }
+}
+
+/* Servizi: voce AI in ogni area, segnata da un'etichetta */
+.service-area__ai h4::after {
+  content: 'AI';
+  margin-left: 8px;
+  padding: 1px 6px;
+  border: 1px solid var(--bordeaux);
+  border-radius: 2px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--bordeaux);
+  vertical-align: 2px;
+}
+
+/* Metodo: nota sui progetti AI */
+.method__ai {
+  margin-top: 16px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--warm-gray);
+}
+
+/* A chi mi rivolgo: ultima card a tutta larghezza se dispari */
+.forwho__profiles .profile-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
